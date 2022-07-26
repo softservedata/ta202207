@@ -1,4 +1,4 @@
-package com.softserve.edu2;
+package com.softserve.hw03.edu2;
 
 public class A {
     public void m1(){

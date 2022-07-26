@@ -1,6 +1,6 @@
-package com.softserve.edu;
+package com.softserve.hw03.edu;
 
-import com.softserve.edu1.A;
+import com.softserve.hw03.edu1.A;
 
 import java.util.Scanner;
 
@@ -37,7 +37,7 @@ public class Example {
         //
         A a = new A();
         a.m1();
-        com.softserve.edu2.A a2 = new com.softserve.edu2.A();
+        com.softserve.hw03.edu2.A a2 = new com.softserve.hw03.edu2.A();
         a2.m1();
         //
         Scanner sc = new Scanner(System.in);
