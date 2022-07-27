@@ -13,8 +13,7 @@ public class Main {
         System.out.print("How old are you? ");
         int age = Integer.parseInt(br.readLine());
         //
-        System.out.println("Hello " + name);
-        System.out.println("You are " + age);
+        System.out.printf("Hello %s, you are %d", name, age);
         //
         br.close();
     }
