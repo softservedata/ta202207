@@ -4,21 +4,23 @@ import com.softserve.edu1.A;
 
 import java.util.Scanner;
 
-public class Example {
+public class Example extends Object {
 
     private int k = 123;
     private float k2 = 123;
+
 
     public Example() {
         k = 456;
     }
 
-    public Example(float k2) {
-        this.k2 = k2;
-    }
-
     public Example(int k1) {
         k = k1;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + "@" + Integer.toHexString(hashCode());
     }
 
     public static void main(String[] args) {
@@ -44,5 +46,10 @@ public class Example {
         System.out.print("name = ");
         String name = sc.nextLine();
         System.out.println("Hello " + name);
+
+        //
+
+        String name1 = "Tanya"; // name =new String("name")
+        System.out.println(name1.toString());
     }
 }
