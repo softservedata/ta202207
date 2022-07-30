@@ -1,4 +1,4 @@
-package com.softserve.edu;
+package com.softserve.hw03PA;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,13 +8,14 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         //
-        System.out.print("Hello. What is your name? ");
+        System.out.print("Hi! What is your name? ");
         String name = br.readLine();
         System.out.print("How old are you? ");
         int age = Integer.parseInt(br.readLine());
         //
         System.out.println("Hello " + name);
         System.out.println("You are " + age + " years old");
+        System.out.println("This is just great! <3");
         //
         br.close();
     }
