@@ -1,6 +1,6 @@
 package com.softserve.edu;
 
-import com.softserve.edu1.A;
+import com.softserve.edu01.A;
 
 import java.util.Scanner;
 
@@ -39,7 +39,7 @@ public class Example extends Object {
         //
         A a = new A();
         a.m1();
-        com.softserve.edu2.A a2 = new com.softserve.edu2.A();
+        com.softserve.edu02.A a2 = new com.softserve.edu02.A();
         a2.m1();
         //
         Scanner sc = new Scanner(System.in);
