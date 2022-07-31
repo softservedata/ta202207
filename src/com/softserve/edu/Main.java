@@ -17,5 +17,8 @@ public class Main {
         System.out.println("You are " + age);
         //
         br.close();
+
+        //HomeWork3
+        System.out.println("Hi :)");
     }
 }
