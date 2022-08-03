@@ -1,4 +1,4 @@
-package com.softserve.edu.hw3;
+package com.softserve.hw3;
 
 public class Pair {
     private int k1;
