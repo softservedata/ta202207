@@ -13,7 +13,7 @@ public class AppStud {
             System.out.println("NOT Equal");
         }
         System.out.println("st1 = " + st1); // st1.toString()
-        System.out.println("st2 = " + st2);
+        System.out.println("st2 = " + st2.toString());
         //
         System.out.println("st1.hashCode() = " + st1.hashCode());
         System.out.println("st2.hashCode() = " + st2.hashCode());

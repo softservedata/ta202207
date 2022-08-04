@@ -1,4 +1,4 @@
-package com.softserve.edu04;
+package com.softserve.edu05;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -152,7 +152,7 @@ public class ApplCondition {
         }
         System.out.println("year = " + year + " isLeap = " + isLeap);
         */
-        //
+        /*
         //int year = 2000;
         //int year = 1900;
         int year = 2020;
@@ -167,36 +167,40 @@ public class ApplCondition {
             isLeap = false;
         }
         System.out.println("year = " + year + " isLeap = " + isLeap);
-        //
-        /*-
+        */
+        // /*-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Do you enjoy Java? (yes/no/maybe): ");
         String input = br.readLine();
         //
         switch (input.toLowerCase()) {
-        case "yes":
-        	System.out.println("Ok!");
-        case "maybe":
-        	System.out.println("Great!");
-        	break;
-        case "no":
-        	System.out.println("Too bad!");
-        	break;
-        default:
-        	System.out.println("Wrong!");
+            case "yes":
+                System.out.println("Ok!");
+            case "maybe":
+                System.out.println("Great!");
+                break;
+            case "no":
+                System.out.println("Too bad!");
+                break;
+            default:
+                System.out.println("Wrong!");
         }
         //
         String s = input.toLowerCase();
         if (s.equals("yes")) {
-        	System.out.println("Ok! 2");
-        } 
-        if (s.equals("yes") || s.equals("maybe")) {
-        	System.out.println("Great! 2");
-        } else if (s.equals("no")) {
-        	System.out.println("Too bad! 2");
-        } else {
-        	System.out.println("Wrong! 2");
+            System.out.println("Ok! 2");
         }
-        */
+        if (s.equals("yes") || s.equals("maybe")) {
+            System.out.println("Great! 2");
+        } else if (s.equals("no")) {
+            System.out.println("Too bad! 2");
+        } else {
+            System.out.println("Wrong! 2");
+        }
+        //
+        input = input.replaceAll("\\D", "");
+        int i = Integer.valueOf(input.length() == 0 ? "0" : input);
+        System.out.println("i + 1 = " + (i + 1));
+        // */
     }
 }

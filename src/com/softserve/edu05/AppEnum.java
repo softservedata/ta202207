@@ -76,7 +76,7 @@ public class AppEnum {
 		/*-
 		Season season;
         season = Season.WINTER;
-        System.out.println("season.toString() = " + season);
+        System.out.println("season.toString() = " + season); // season.toString()
         System.out.println("season.name() = " + season.name());
         //
         System.out.println("Next season = " + season.nextSeason().name());
@@ -95,7 +95,7 @@ public class AppEnum {
         Season season = null;
         String month = "Marth";
         switch (month) {
-        case "Deñember":
+        case "December":
         case "January":
         case "February":
             season = Season.WINTER;
@@ -125,7 +125,7 @@ public class AppEnum {
         //
         switch (season) {
         case WINTER:
-            System.out.println("Deñember, January, February");
+            System.out.println("December, January, February");
             break;
         case SPRING:
             System.out.println("Marth, April, May");
@@ -137,7 +137,7 @@ public class AppEnum {
             System.out.println("September, October, November");
             break;
         }
-        //*/
+        // */
 	}
 	
 }
