@@ -17,5 +17,6 @@ public class hw5 {
         int[] numbers = {number1, number2, number3};
         Arrays.sort(numbers);
         System.out.println("Ascending order"+ Arrays.toString(numbers));
+
     }
 }
