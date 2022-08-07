@@ -14,10 +14,16 @@ public class Number {
         System.out.print("Type second decimal unique number using dot = ");
         float number2 = Float.parseFloat(br.readLine());
 
-        if (number1 < number2 || number1 == number2) {
+
+        String result = (number1 < number2 || number1 == number2) ? ("number1 = " + number1 + "\n" + "number2 = " + number2) :
+                ("number1 = " + number2 + "\n" + "number2 = " + number1);
+
+        System.out.println(result);
+
+       /* if (number1 < number2 || number1 == number2) {
             System.out.println(number1 + "\n" + number2);
         } else {
             System.out.println(number2 + "\n" + number1);
-        }
+        }*/
     }
 }
