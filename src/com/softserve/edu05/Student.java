@@ -1,6 +1,6 @@
 package com.softserve.edu05;
 
-public class Student {
+public class Student { //extends Object {
     private String name;
     private int age;
 

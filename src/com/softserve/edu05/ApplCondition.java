@@ -1,4 +1,4 @@
-package com.softserve.edu04;
+package com.softserve.edu05;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,14 +18,14 @@ public class ApplCondition {
         /*-
         // var i = 123; // From Java 10.
         String s = "abc";
-        s = s + 1; // OK, symbol 1 is 49 in memory.
+        s = s + 1; // OK, symbol 1 is 49 in memory. s = s + "1";
         System.out.println("s=" + s);
         */
         //
         /*-
         int x = 1;
         int y = 0;
-        // double result = x / y;     // Runtime Exception
+        //double result = x / y;     // Runtime Exception
         double result = 1.0 * x / y; // result = Infinity
         System.out.println("result = " + result);
         */
@@ -55,6 +55,7 @@ public class ApplCondition {
         b = ++x; // x = 6 b = 6
         System.out.println("b = " + b + "   x = " + x);
         ++x; // x = 7
+        System.out.println("++x = " + x);
         //
         x = 5;
         a = x++ + x; // 5 (x=6) + x = 11
@@ -100,8 +101,9 @@ public class ApplCondition {
         /*-
         int a = 37, b = 24;
         //if (a > 5 && (b = 72) < 50) {
-        //if (a > 50 && (b = 72) < 50) {
-        if (a > 50 & (b = 72) < 50) {
+        if (a > 50 && (b = 72) < 50) {
+        //if (a > 50 & (b = 72) < 50) {
+        //if (a > 5 && (b = 12) < 50) {
             System.out.println("Do something...");
             System.out.println("Variable 'b' = " + b);
         }
@@ -111,7 +113,7 @@ public class ApplCondition {
         /*-
         int a = 67, b = 24;
         //if (a > 50 || (b = 72) < 50) {
-        //if (a > 500 || (b = 72) < 50) {
+        // if (a > 500 || (b = 72) < 50) {
         if (a > 5 | (b = 72) < 50) {
             System.out.println("Do something...");
         }
@@ -121,14 +123,50 @@ public class ApplCondition {
         /*-
         int temperature = 1;
         if (temperature < 10) {
-        	System.out.println("if: It’s too cold");
+        	System.out.println("if: It is too cold");
         } else {
-        	System.out.println("if: It’s Ok");
+        	System.out.println("if: It is Ok");
         }
         temperature = 11;
-        //String result = temperature < 10 ? "It’s too cold" : "It’s Ok";
+        //String result = temperature < 10 ? "It is too cold" : "It is Ok";
         //System.out.println("ter: " + result);
-        System.out.println("ter: " + (temperature < 10 ? "It’s too cold" : "It’s Ok") );
+        System.out.println("ter: " + (temperature < 10 ? "It is too cold" : "It is Ok") );
+        */
+        /*
+        //int year = 2000;
+        //int year = 1900;
+        int year = 2020;
+        boolean isLeap = false;
+        if (year % 4 != 0) {
+            isLeap = false;
+        } else {
+            if (year % 100 != 0) {
+                isLeap = true;
+            } else {
+                if (year % 400 == 0) {
+                    isLeap = true;
+                } else {
+                    isLeap = false;
+                }
+            }
+        }
+        System.out.println("year = " + year + " isLeap = " + isLeap);
+        */
+        /*
+        //int year = 2000;
+        //int year = 1900;
+        int year = 2020;
+        boolean isLeap = false;
+        if (year % 4 != 0) {
+            isLeap = false;
+        } else if (year % 100 != 0) {
+            isLeap = true;
+        } else if (year % 400 == 0) {
+            isLeap = true;
+        } else {
+            isLeap = false;
+        }
+        System.out.println("year = " + year + " isLeap = " + isLeap);
         */
         // /*-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -136,29 +174,33 @@ public class ApplCondition {
         String input = br.readLine();
         //
         switch (input.toLowerCase()) {
-        case "yes":
-        	System.out.println("Ok!");
-        case "maybe":
-        	System.out.println("Great!");
-        	break;
-        case "no":
-        	System.out.println("Too bad!");
-        	break;
-        default:
-        	System.out.println("Wrong!");
+            case "yes":
+                System.out.println("Ok!");
+            case "maybe":
+                System.out.println("Great!");
+                break;
+            case "no":
+                System.out.println("Too bad!");
+                break;
+            default:
+                System.out.println("Wrong!");
         }
         //
         String s = input.toLowerCase();
         if (s.equals("yes")) {
-        	System.out.println("Ok! 2");
-        } 
-        if (s.equals("yes") || s.equals("maybe")) {
-        	System.out.println("Great! 2");
-        } else if (s.equals("no")) {
-        	System.out.println("Too bad! 2");
-        } else {
-        	System.out.println("Wrong! 2");
+            System.out.println("Ok! 2");
         }
+        if (s.equals("yes") || s.equals("maybe")) {
+            System.out.println("Great! 2");
+        } else if (s.equals("no")) {
+            System.out.println("Too bad! 2");
+        } else {
+            System.out.println("Wrong! 2");
+        }
+        //
+        input = input.replaceAll("\\D", "");
+        int i = Integer.valueOf(input.length() == 0 ? "0" : input);
+        System.out.println("i + 1 = " + (i + 1));
         // */
     }
 }
