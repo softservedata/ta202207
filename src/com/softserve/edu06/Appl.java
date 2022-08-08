@@ -73,7 +73,7 @@ public class Appl {
             System.out.print(monthDays[i] + "  ");
             i2 = i;
         }
-        // System.out.println("i = " + i); // Error
+        //System.out.println("i = " + i); // Error
         System.out.println("\ni2 = " + i2);
         //
         System.out.println("\n2. for each");
@@ -106,7 +106,7 @@ public class Appl {
         System.out.println("\n6. simple for(;;,);");
         for (int j = 0; j < monthDays.length; System.out.print(monthDays[j] + "  "), j++) ;
         */
-        /*-
+        // /*-
         int monthDays[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         System.out.println("\n7. for (... ; ; ...)");
         for (int j = 0; ; j++) {
@@ -139,7 +139,7 @@ public class Appl {
         for (int i = 0; i < monthDays.length; System.out.print(monthDays[i] + "  "), i++) ;
         //
         // */
-        // /*-
+        /*-
         System.out.println("\n9. irregular0");
         int[][] irregular0;
         irregular0 = new int[4][];
@@ -170,6 +170,6 @@ public class Appl {
             }
             System.out.println();
         }
-        // */
+        */
     }
 }
