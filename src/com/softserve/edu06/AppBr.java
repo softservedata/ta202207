@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AppBr {
 	public static void main(String[] args) {
-		// /*-
+		/*-
 		int[] arr = new int[10];
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = -1;
@@ -16,15 +16,16 @@ public class AppBr {
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print("Input number: ");
 			n = Integer.parseInt(sc.nextLine());
+			//n = Integer.valueOf(sc.nextLine());
 			if (n < 0) {
-				//break;
-				continue;
+				break;
+				//continue;
 			}
 			arr[i] = n;
 		}
 		System.out.println("Array: " + Arrays.toString(arr));
 		sc.close();
-		// */
+		*/
 		/*-
 		int[] arr = { 2, -5, 7, 8, -4, 1 };
 		//
@@ -48,9 +49,9 @@ public class AppBr {
 		}
 		System.out.println("Amount = " + amount);
 		*/
-	    /*-
+	    // /*-
 		int[] arr = { 2, -5, 7, 8, -4, 1, 7 };
-	    int imax = 0;
+	    int imax = 1;
 		int max = arr[imax];
 		System.out.println("Current max = " + max + "  position = " + (imax + 1));
 		for (int i = 0; i < arr.length; i++) {
@@ -63,6 +64,6 @@ public class AppBr {
 		}
 		System.out.print("Maximum = " + max);
 		System.out.println(" is in " + (imax + 1) + " place");
-        */
+        // */
 	}
 }
