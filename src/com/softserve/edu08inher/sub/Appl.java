@@ -25,7 +25,7 @@ public class Appl { // implements Serializable
 		// /*-
 		System.out.println("Test ClassB.");
 		ClassA b; // = null;
-		// System.out.println("b.i = " + b.i); // error not init
+		//System.out.println("b.i = " + b.i); // error not init
 		b = new ClassB(); // 1. Polymor.
 		System.out.println("b.i = " + b.i); // from A, fields not virtual; Architecture Error; Fields must be private
 		b.m1(); // 2. Polymor.
@@ -37,11 +37,11 @@ public class Appl { // implements Serializable
 //        if (b instanceof ClassB) {
 //        	((ClassB) b).m5(); // No Runtime Error
 //        }
-		//b.m6(); // Running from ClassA; Architecture Error;
-		// ClassB.m6();
-		// ClassA.m6(b);
-		// b.m8(); // Error for other package
-		// ((ClassB) b).m8();
+//		b.m6(); // Running from ClassA; Architecture Error;
+//		ClassB.m6();
+//		ClassA.m6();
+		//b.m8(); // Error for other package
+//		((ClassB) b).m8();
 		// */
 		/*-
         System.out.println("Test_0 ClassB.");
