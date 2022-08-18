@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class BoxGen<T> {
 // public class BoxGen<T extends Serializable> {
-	// private static T obj; // Error
+//	 private static T obj; // Error
 	private T obj;
 	
 //	public BoxGen() {
