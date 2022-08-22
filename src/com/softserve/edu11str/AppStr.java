@@ -8,7 +8,7 @@ public class AppStr {
 		char[] chA = { 'A', 'B', 'C', 'D', 'E', 'F' };
 		System.out.println("array lenght = "+ chA.length);
 		String strThird = new String(chA);
-		System.out.println("strThird = " + strThird);
+		System.out.println("strThird = " + strThird + "   len = " + strThird.length());
 		String strFourth = new String(chA, 2, 4); // CDEF
 		System.out.println("strFourth = " + strFourth);
 		*/
@@ -32,7 +32,7 @@ public class AppStr {
 		System.out.println("str2 = " + str2);
 		*/
 		/*-
-		String str = "  \t\t   Tabulated String  \t\n\n  ";
+		String str = "  \t\t   Tabulated  String  \t\n\n  ";
 		System.out.println(str);
 		str = str.trim();
 		System.out.println(str);
@@ -40,11 +40,11 @@ public class AppStr {
 		/*-
 		String str = "abracadabra abba";
 		System.out.println(str);
-		//str = str.replace("a", "--");
+		str = str.replace("a", "--");
 		//str = str.replaceAll("a\\b", "--"); // \b word boundary
-		str = str.replaceAll("\\Ba\\B", "--"); // \B non word boundary
+		//str = str.replaceAll("\\Ba\\B", "--"); // \B non word boundary
 		//str = str.replaceFirst("a", "--");
-		//str = str.replaceFirst("b", "--");
+		// str = str.replaceFirst("b", "--");
 		System.out.println(str);
 		str = ""; // null
 		System.out.println("str.isEmpty() = " + str.isEmpty());
@@ -90,7 +90,7 @@ public class AppStr {
 		*/
 		/*-
 		final double PI = 3.1415926;
-		String formatStr = "%S is =%6.2f\n";
+		String formatStr = "%S is =%06.2f\n";
 		System.out.println("const PI = " + PI);
 		String s = String.format(formatStr, "pi", PI);
 		System.out.println(s);
@@ -114,6 +114,7 @@ public class AppStr {
 		sb.insert(5,"12345");
 		System.out.println("new sb.length() = " + sb.length());
 		System.out.println("new sb.capacity() = " + sb.capacity());
+		System.out.println("Reverse sb = " + sb);
 		System.out.println("Reverse sb = " + sb.reverse());
 		// */
 	}
