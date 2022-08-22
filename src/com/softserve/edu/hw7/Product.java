@@ -10,6 +10,8 @@ package com.softserve.edu.hw7;
 //        Запушати код на github у свою вітку.
 
 
+import java.util.Objects;
+
 public class Product {
     private String productName;
     private double amount;
@@ -54,6 +56,10 @@ public class Product {
             return true;
         }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(productName, amount);
     }
+}
 
 
