@@ -2,7 +2,7 @@ package com.softserve.edu10set;
 
 import java.util.Comparator;
 
-public class Employee { //implements Comparable<Employee> {
+public class Employee implements Comparable<Employee> {
 	
 	public static class ByNameAndId implements Comparator<Employee> {
         @Override
@@ -49,8 +49,9 @@ public class Employee { //implements Comparable<Employee> {
 		this.name = name;
 	}
 	
-	// @Override
-	public int hashCode1() {
+	@Override
+	public int hashCode() {
+		//System.out.println("\thashCode() for " + this);
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + id;
@@ -58,8 +59,9 @@ public class Employee { //implements Comparable<Employee> {
 		return result;
 	}
 
-	// @Override
-	public boolean equals1(Object obj) {
+	@Override
+	public boolean equals(Object obj) {
+		//System.out.println("\t\tequals()");
 		if (this == obj) {
 			return true;
 		}
@@ -67,9 +69,9 @@ public class Employee { //implements Comparable<Employee> {
 			return false;
 		}
 		//
-		if (hashCode() != obj.hashCode()) {
-			return false;
-		}
+//		if (hashCode() != obj.hashCode()) {
+//			return false;
+//		}
 		//
 		Employee other = null;
 		if (obj instanceof Employee) {
@@ -91,8 +93,8 @@ public class Employee { //implements Comparable<Employee> {
 		return "\nEmployee [id=" + id + ", name=" + name + "]";
 	}
 
-	// @Override
-	public int compareTo1(Employee employee) {
+	@Override
+	public int compareTo(Employee employee) {
 		//return name.compareTo(employee.getName());
 		return id - employee.getId();
 		// return 1;

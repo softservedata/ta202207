@@ -16,6 +16,7 @@ public class AppMap {
 		map.put(null, "is_simple_null");
 		System.out.println("map = " + map);
 		map.put(null, "is_second_null");
+		System.out.println("map = " + map);
 		//
 		// /*-
 		System.out.println("First");
