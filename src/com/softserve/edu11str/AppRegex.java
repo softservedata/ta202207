@@ -54,14 +54,16 @@ public class AppRegex {
 		m.reset(); // Reset Iterator
 		//List<String> list = new ArrayList<>();
 		while (m.find()) {
+			//
+			System.out.println("grop1 = " + m.group(1));
+			//
 			/*-
 			String sNum = text.substring(m.start(), m.end());
 			sNum = sNum.replaceAll("[,']", "");
 			System.out.println("sNum = " + sNum);
 			double num = Double.valueOf(sNum);
 			System.out.println("num + 1.11 = " + (num + 1.11));
-			*/
-			//System.out.println("grop1 = " + m.group(1));
+		    */
 			//
 			System.out.print(text.substring(m.start(), m.end()) + "*");
 			//System.out.print(text.substring(m.start() + 1, m.end() - 1).trim() + "*");
