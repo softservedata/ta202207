@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class Appl {
     public static void main(String[] args) {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int x = 0;
         System.out.print("Input number: ");
         try {

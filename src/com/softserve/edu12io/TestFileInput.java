@@ -16,7 +16,7 @@ public class TestFileInput {
             System.out.println("Bytes count: " + bytesAv + " Bytes");
             //
             //int count = inFile.read(r, 0, bytesAv);
-            //
+            // /*
             int count = 0;
             for (int i = 0; ; i++) {
                 int b = inFile.read();
@@ -26,7 +26,7 @@ public class TestFileInput {
                 r[i] = (byte) b;
                 count = (i + 1);
             }
-            //
+            // */
             System.out.println("Was readed: " + count + " bytes.");
             for (int i = 0; i < bytesAv; i++) {
                 System.out.print(r[i] + " ");
@@ -36,7 +36,7 @@ public class TestFileInput {
             for (int i = 0; i < bytesAv; i++) {
                 //System.out.print((char) r[i] + " ");
                 System.out.print(" " + (char) r[i]);
-                Thread.sleep(1000);
+                Thread.sleep(1500);
             }
             System.out.println();
             //System.out.println((char) r[0] + " " + (char) r[1] + " " + (char) r[2]);

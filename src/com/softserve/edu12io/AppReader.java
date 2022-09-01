@@ -12,7 +12,7 @@ public class AppReader {
         BufferedWriter bw = null;
         FileReader fr = null;
         BufferedReader br = null;
-        String data = "Some data to be written and readed\r\n";
+        String data = "Some data to be written and readed\r\n"; // added 13 10
         try {
             fw = new FileWriter(fileName);
             bw = new BufferedWriter(fw);
