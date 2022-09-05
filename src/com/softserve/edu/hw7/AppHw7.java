@@ -1,6 +1,6 @@
 package com.softserve.edu.hw7;
 
-public class App7 {
+public class AppHw7 {
     public static void main(String[] args) {
         Product products[] = {new Product("Coffee", 80), new Product("Bread", 20),
                 new Product("Milk", 38), new Product("Milk", 36),
