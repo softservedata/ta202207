@@ -11,14 +11,20 @@ public class Multithread {
         Thread t3 = new Thread(r3);
         t1.start();
         t2.start();
-        t3.start();
+
         try {
             t1.join();
             t2.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        t3.start();
+        try {
             t3.join();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-    }
 
+    }
 }
