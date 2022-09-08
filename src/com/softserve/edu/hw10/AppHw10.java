@@ -1,6 +1,5 @@
 package com.softserve.edu.hw10;
 
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -12,7 +11,7 @@ public class AppHw10 {
         List<Integer> list2 = Arrays.asList(3, 3, 2, 2, 1, 1);
         //delete duplicates in lists
         Set<Integer> set1 = new HashSet<>(list1);
-        Set<Integer> set2= new HashSet<>(list1);
+        Set<Integer> set2 = new HashSet<>(list2);
 
         System.out.println("List 1 without duplicates = " + set1);
         System.out.println("List 2 without duplicates = " + set2);

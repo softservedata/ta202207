@@ -1,4 +1,4 @@
-package com.softserve.edu.hm3;
+package com.softserve.edu.hw3;
 
 public class AppHw3 {
     public static void main(String[] args) {
