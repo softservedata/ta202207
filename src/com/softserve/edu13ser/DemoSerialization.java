@@ -8,8 +8,6 @@ package com.softserve.edu13ser;
 
 import java.io.*;
 
-import com.google.gson.Gson;
-
 public class DemoSerialization {
 	// /*- Binary
 	public static void main(String[] args) {

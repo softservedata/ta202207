@@ -1,6 +1,6 @@
 package com.softserve.edu.hw6;
 
-public class App {
+public class AppHw6 {
     public static void main(String[] args) {
 
         for (Drinks drink : Drinks.values()) {
