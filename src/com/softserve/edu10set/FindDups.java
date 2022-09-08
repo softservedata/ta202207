@@ -4,7 +4,7 @@ import java.util.*;
 
 public class FindDups {
 	public static void main(String[] args) {
-		/*-
+		// /*-
 		Set<String> s = new HashSet<>();
 		//List<String> s = new LinkedList<>();
 		for (int i = 0; i < args.length; i++) {
@@ -13,7 +13,7 @@ public class FindDups {
 		    }
 		}
 		System.out.println("Elements: " + s);
-		*/
+		//*/
 		/*-
 		//Set<Employee> s = new HashSet<>();
 		Set<Employee> s = new TreeSet<>(new Employee.ByNameAndId());
@@ -59,7 +59,7 @@ public class FindDups {
 		//s.sort();
 		System.out.println("Sorted Elements: " + s);
 		*/
-		// /*-
+		/*-
 		List<Employee> s = new LinkedList<>();
 		s.add(new Employee(123, "Ivan"));
 		s.add(new Employee(121, "Petro"));
@@ -69,7 +69,7 @@ public class FindDups {
 		//Collections.sort(s, new Employee.ByNameAndId());
 		//s.sort(new Employee.ByNameAndId());
 		System.out.println("Sorted Elements: " + s);
-		// */
+		*/
 		//Set<String> s2 = new HashSet<>();
 	}
 }
