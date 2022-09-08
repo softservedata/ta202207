@@ -35,9 +35,9 @@ public class Number {
     }
         if (a > c) {
         temp = a;
-        a = b;
+        a = c;
         c = temp;
     }
-        System.out.printf("The numbers are sorted in ascending order: %d %d %d\n", a, b, c);
+        System.out.printf("The viriables are sorted in ascending order: %d %d %d\n", a, b, c);
 }
 }
