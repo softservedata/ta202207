@@ -33,10 +33,10 @@ public class Number {
         b = c;
         c = temp;
     }
-        if (a > b) {
+        if (a > c) {
         temp = a;
         a = b;
-        b = temp;
+        c = temp;
     }
         System.out.printf("The numbers are sorted in ascending order: %d %d %d\n", a, b, c);
 }
