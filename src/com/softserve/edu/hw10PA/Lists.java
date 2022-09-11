@@ -1,7 +1,7 @@
 package com.softserve.edu.hw10PA;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+
 
 public class Lists {
     public static void main(String[] args) {
